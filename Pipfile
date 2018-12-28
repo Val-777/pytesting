@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 pytest = "*"
+tasks = {path = "./tasks_proj"}
 
 [dev-packages]
 
