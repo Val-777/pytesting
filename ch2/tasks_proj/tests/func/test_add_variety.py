@@ -64,6 +64,18 @@ def test_add_4(task):
     assert equivalent(t_from_db, task)
 
 
+task_ids = [
+    f'Task({t.summary}, {t.owner}, {t.done})' for t in tasks_to_try
+]
+
+@pytest.mark.parametrize('task', tasks_to_try, ids=task_ids)
+def test_add_5(task):
+    """Demonstrate ids."""
+    task_id = tasks.add(task)
+    t_from_db = tasks.get(task_id)
+    assert equivalent(t_from_db, task)
+
+
 def equivalent(t1, t2):
     """Check two tasks for equivalence."""
     # Compare everything but the id field
