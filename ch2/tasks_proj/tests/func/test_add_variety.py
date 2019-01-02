@@ -28,6 +28,27 @@ def test_add_2(task):
     assert equivalent(t_from_db, task)
 
 
+@pytest.mark.parametrize(
+    'summary, owner, done',
+    [
+        ('sleep', None, False),
+        ('wake', 'brian', False),
+        ('breathe', 'BRIAN', True),
+        ('eat eggs', 'BrIaN', False),
+    ]
+)
+def test_add_3(
+    summary: str,
+    owner: str,
+    done: bool
+):
+    """Demonstrate parametrize with multiple params."""
+    task = Task(summary, owner, done)
+    task_id = tasks.add(task)
+    t_from_db = tasks.get(task_id)
+    assert equivalent(t_from_db, task)
+
+
 def equivalent(t1, t2):
     """Check two tasks for equivalence."""
     # Compare everything but the id field
