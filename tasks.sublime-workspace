@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"param",
+				"parametrize"
+			],
+			[
+				"tas",
+				"tasks_to_try"
+			],
+			[
 				"e",
 				"equivalent\tfunction"
 			],
@@ -95,7 +103,7 @@
 			"file": "ch2/tasks_proj/tests/func/test_add_variety.py",
 			"settings":
 			{
-				"buffer_size": 1613,
+				"buffer_size": 3280,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -452,19 +460,22 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1613,
+						"buffer_size": 3280,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								907,
-								907
+								2841,
+								2841
 							]
 						],
 						"settings":
 						{
+							"SL.18.region_keys":
+							[
+							],
 							"SL.37.region_keys":
 							[
 							],
@@ -486,7 +497,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 412.0,
+						"translation.y": 2083.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -676,7 +687,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 273.0,
+	"side_bar_width": 62.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
