@@ -13,6 +13,19 @@ def test_some_data(some_data):
 
 
 @pytest.fixture()
+def some_other_data():
+    """Raise an exception from fixture."""
+    x = 43
+    assert x == 42
+    return x
+
+
+def test_other_data(some_other_data):
+    """Try to use failing fixture."""
+    assert some_data == 42
+
+
+@pytest.fixture()
 def a_tuple():
 	"""Return something more interesting."""
 	return (1, 'foo', None, {'bar': 23})
